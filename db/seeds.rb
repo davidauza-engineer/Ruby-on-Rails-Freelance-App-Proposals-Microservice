@@ -5,3 +5,14 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+10.times do |n|
+  Proposal.create!(
+      customer: "Customer #{n}",
+      portfolio_url: 'http://davidauza.engineer',
+      tools: 'Ruby on Rails, Angular 4, and PostgreSQL',
+      estimated_hours: (80 + n),
+      hourly_rate: 120,
+      weeks_to_complete: 12,
+      client_email: 'davidauza@email.com'
+  )
+end
